@@ -1,0 +1,60 @@
+### MallaLab · ejemplos de API
+### Requiere la extension "REST Client" de VS Code (humao.rest-client)
+
+@host = http://localhost:8080
+
+### Listar carreras
+GET {{host}}/api/careers
+
+### Malla completa de TI
+GET {{host}}/api/careers/TI-ESPE/curriculum
+
+### Minimo teorico y cuellos de botella
+GET {{host}}/api/careers/TI-ESPE/insights
+
+### Escenario base: alumno que aprobo hasta cuarto semestre
+### resultado: baselineTerms=4, totalTerms=4, delay=0, totalCredits=60
+POST {{host}}/api/planner/simulate
+Content-Type: application/json
+
+{
+  "careerCode": "TI-ESPE",
+  "approved": [
+    "EXCT-A0301", "EXCT-A0302", "COMP-A0J01", "EXCT-A0201", "TCON-A0304", "CHUM-A0100",
+    "EXCT-A0303", "EXCT-A0001", "EXCT-A0401", "COMP-A0J07", "ELEE-A0442",
+    "EXCT-A0402", "COMP-A0G02", "EXCT-A0501", "COMP-A0I02", "COMP-A0J09", "COMP-A0F02",
+    "COMP-A0I03", "COMP-A0G05", "COMP-A0G03", "ELEE-A0344", "SEGD-A0000", "COMP-A0H02"
+  ],
+  "failed": [],
+  "maxCreditsPerTerm": 18
+}
+
+### Que pasa si pierdo Estructura de Datos
+### resultado: baselineTerms=5, totalTerms=6, delay=1, totalCredits=77
+POST {{host}}/api/planner/simulate
+Content-Type: application/json
+
+{
+  "careerCode": "TI-ESPE",
+  "approved": [
+    "EXCT-A0301", "EXCT-A0302", "COMP-A0J01", "EXCT-A0201", "TCON-A0304", "CHUM-A0100",
+    "EXCT-A0303", "EXCT-A0001", "EXCT-A0401", "COMP-A0J07", "ELEE-A0442",
+    "EXCT-A0402", "COMP-A0G02", "EXCT-A0501", "COMP-A0I02", "COMP-A0F02"
+  ],
+  "failed": ["COMP-A0J09"],
+  "maxCreditsPerTerm": 18
+}
+
+### Guardar el escenario en el historial
+POST {{host}}/api/planner/simulate
+Content-Type: application/json
+
+{
+  "careerCode": "TI-ESPE",
+  "approved": ["COMP-A0J01", "COMP-A0J07"],
+  "failed": ["COMP-A0J09"],
+  "save": true
+}
+
+### Historial
+GET {{host}}/api/planner/runs?career=TI-ESPE

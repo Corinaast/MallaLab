@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/mallalab}
+    username: ${SPRING_DATASOURCE_USERNAME:mallalab}
+    password: ${SPRING_DATASOURCE_PASSWORD:mallalab}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: false

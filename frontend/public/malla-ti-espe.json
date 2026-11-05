@@ -1,0 +1,61 @@
+{
+  "code": "TI-ESPE",
+  "name": "Ingeniería en Tecnologías de la Información",
+  "institution": "Universidad de las Fuerzas Armadas - ESPE",
+  "totalCredits": 120,
+  "courses": [
+    { "code": "EXCT-A0301", "name": "Cálculo Diferencial e Integral", "credits": 4, "term": 1, "requires": [] },
+    { "code": "EXCT-A0302", "name": "Álgebra Lineal", "credits": 3, "term": 1, "requires": [] },
+    { "code": "COMP-A0J01", "name": "Fundamentos de Programación", "credits": 4, "term": 1, "requires": [] },
+    { "code": "EXCT-A0201", "name": "Química I", "credits": 2, "term": 1, "requires": [] },
+    { "code": "TCON-A0304", "name": "Cultura Ambiental", "credits": 1, "term": 1, "requires": [] },
+    { "code": "CHUM-A0100", "name": "Metodología de la Investigación Científica", "credits": 1, "term": 1, "requires": [] },
+
+    { "code": "EXCT-A0303", "name": "Cálculo Vectorial", "credits": 3, "term": 2, "requires": ["EXCT-A0301"] },
+    { "code": "EXCT-A0001", "name": "Física I", "credits": 3, "term": 2, "requires": ["EXCT-A0301", "EXCT-A0302"] },
+    { "code": "EXCT-A0401", "name": "Ecuaciones Diferenciales Ordinarias", "credits": 3, "term": 2, "requires": ["EXCT-A0301", "EXCT-A0302"] },
+    { "code": "COMP-A0J07", "name": "Programación Orientada a Objetos", "credits": 3, "term": 2, "requires": ["COMP-A0J01"] },
+    { "code": "ELEE-A0442", "name": "Computación Digital", "credits": 3, "term": 2, "requires": [] },
+
+    { "code": "EXCT-A0402", "name": "Métodos Numéricos", "credits": 3, "term": 3, "requires": ["EXCT-A0401", "EXCT-A0303"] },
+    { "code": "COMP-A0G02", "name": "Metodologías de Desarrollo de Software", "credits": 3, "term": 3, "requires": ["COMP-A0J07"] },
+    { "code": "EXCT-A0501", "name": "Estadística", "credits": 3, "term": 3, "requires": ["EXCT-A0301"] },
+    { "code": "COMP-A0I02", "name": "Sistemas Operativos", "credits": 2, "term": 3, "requires": ["ELEE-A0442"] },
+    { "code": "COMP-A0J09", "name": "Estructura de Datos", "credits": 2, "term": 3, "requires": ["COMP-A0J07"] },
+    { "code": "COMP-A0F02", "name": "Modelos Discretos para Ingeniería", "credits": 2, "term": 3, "requires": ["EXCT-A0302"] },
+
+    { "code": "COMP-A0I03", "name": "Administración y Mantenimiento de Sistemas", "credits": 2, "term": 4, "requires": ["COMP-A0I02"] },
+    { "code": "COMP-A0G05", "name": "Interfaces y Multimedia", "credits": 2, "term": 4, "requires": ["COMP-A0J07"] },
+    { "code": "COMP-A0G03", "name": "Fundamentos de Sistemas WEB", "credits": 3, "term": 4, "requires": ["COMP-A0J07"] },
+    { "code": "ELEE-A0344", "name": "Redes de Comunicaciones", "credits": 3, "term": 4, "requires": ["ELEE-A0442"] },
+    { "code": "SEGD-A0000", "name": "Liderazgo", "credits": 2, "term": 4, "requires": [] },
+    { "code": "COMP-A0H02", "name": "Sistemas de Bases de Datos", "credits": 3, "term": 4, "requires": ["COMP-A0J09", "COMP-A0F02"] },
+
+    { "code": "COMP-A0H03", "name": "Gestión de Base de Datos", "credits": 3, "term": 5, "requires": ["COMP-A0H02"] },
+    { "code": "COMP-A0I05", "name": "Aplicación de Sistemas Operativos", "credits": 2, "term": 5, "requires": ["COMP-A0I02"] },
+    { "code": "COMP-A0I06", "name": "Internetworking", "credits": 3, "term": 5, "requires": ["ELEE-A0344"] },
+    { "code": "COMP-A0G08", "name": "Aplicación de Tecnologías WEB", "credits": 3, "term": 5, "requires": ["COMP-A0G03"] },
+    { "code": "SEGD-A0100", "name": "Realidad Nacional y Geopolítica", "credits": 2, "term": 5, "requires": [] },
+    { "code": "COMP-A0K01", "name": "Prácticas de Servicio Comunitario", "credits": 2, "term": 5, "requires": ["CHUM-A0100"] },
+
+    { "code": "COMP-A0H05", "name": "Inteligencia Artificial", "credits": 3, "term": 6, "requires": ["COMP-A0J09", "EXCT-A0501"] },
+    { "code": "COMP-A0H06", "name": "Modelado Avanzado de Base de Datos", "credits": 2, "term": 6, "requires": ["COMP-A0H03"] },
+    { "code": "COMP-A0G13", "name": "Desarrollo Web para Integración de Tecnologías", "credits": 3, "term": 6, "requires": ["COMP-A0G08"] },
+    { "code": "COMP-A0K02", "name": "Lectura y Escritura de Textos Académicos", "credits": 1, "term": 6, "requires": [] },
+    { "code": "COMP-A0G14", "name": "Programación Integrativa de Componentes WEB", "credits": 3, "term": 6, "requires": ["COMP-A0G08", "COMP-A0G02"] },
+    { "code": "COMP-A0K03", "name": "Prácticas Laborales I", "credits": 3, "term": 6, "requires": ["COMP-A0G02", "COMP-A0H02"] },
+
+    { "code": "COMP-A0G20", "name": "Programación Avanzada", "credits": 3, "term": 7, "requires": ["COMP-A0J09"] },
+    { "code": "COMP-A0H07", "name": "Minería de Datos", "credits": 3, "term": 7, "requires": ["COMP-A0H05", "EXCT-A0501"] },
+    { "code": "COMP-A0I10", "name": "Seguridad Informática", "credits": 3, "term": 7, "requires": ["ELEE-A0344", "COMP-A0I02"] },
+    { "code": "COMP-A0L04", "name": "Diseño y Evaluación de Proyectos de TI", "credits": 3, "term": 7, "requires": ["COMP-A0G02"] },
+    { "code": "COMP-A0G17", "name": "Aplicaciones Distribuidas", "credits": 2, "term": 7, "requires": ["COMP-A0I06", "COMP-A0G14"] },
+    { "code": "COMP-A0K04", "name": "Prácticas Laborales II", "credits": 1, "term": 7, "requires": ["COMP-A0K03"] },
+
+    { "code": "COMP-A0G22", "name": "Arquitectura de Software", "credits": 3, "term": 8, "requires": ["COMP-A0G02", "COMP-A0G20"] },
+    { "code": "CADM-A0G00", "name": "Gestión y Emprendimiento", "credits": 2, "term": 8, "requires": [] },
+    { "code": "COMP-A0I11", "name": "Tecnologías Emergentes", "credits": 3, "term": 8, "requires": ["COMP-A0H05"] },
+    { "code": "COMP-A0L06", "name": "Gestión de la Seguridad Informática", "credits": 3, "term": 8, "requires": ["COMP-A0I10"] },
+    { "code": "COMP-A0L05", "name": "Trabajo de Integración Curricular", "credits": 4, "term": 8, "requires": ["COMP-A0L04", "COMP-A0K04"] }
+  ]
+}

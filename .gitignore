@@ -1,0 +1,27 @@
+# Backend
+backend/target/
+*.class
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Entornos
+.env
+.env.local
+*.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

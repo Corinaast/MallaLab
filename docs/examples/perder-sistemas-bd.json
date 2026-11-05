@@ -1,0 +1,29 @@
+{
+  "careerCode": "TI-ESPE",
+  "approved": [
+    "CHUM-A0100",
+    "COMP-A0J01",
+    "EXCT-A0201",
+    "EXCT-A0301",
+    "EXCT-A0302",
+    "TCON-A0304",
+    "COMP-A0J07",
+    "ELEE-A0442",
+    "EXCT-A0001",
+    "EXCT-A0303",
+    "EXCT-A0401",
+    "COMP-A0F02",
+    "COMP-A0G02",
+    "COMP-A0I02",
+    "COMP-A0J09",
+    "EXCT-A0402",
+    "EXCT-A0501",
+    "COMP-A0G03",
+    "COMP-A0G05",
+    "COMP-A0I03",
+    "ELEE-A0344",
+    "SEGD-A0000"
+  ],
+  "failed": ["COMP-A0H02"],
+  "maxCreditsPerTerm": 18
+}

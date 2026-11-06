@@ -2,7 +2,7 @@
 
 > **No planifiques cursos. Simula tu camino al título.**
 
-[![CI](https://github.com/Corina-ac/MallaLab/actions/workflows/ci.yml/badge.svg)](https://github.com/Corina-ac/MallaLab/actions/workflows/ci.yml)
+[![CI](https://github.com/Corinaast/MallaLab/actions/workflows/ci.yml/badge.svg)](https://github.com/Corinaast/MallaLab/actions/workflows/ci.yml)
 ![Java](https://img.shields.io/badge/Java-21-0f766e)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6db33f)
 ![React](https://img.shields.io/badge/React-18-0ea5e9)
